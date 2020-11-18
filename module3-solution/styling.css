@@ -1,0 +1,48 @@
+* { box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background: yellow;
+}
+button.navbar-toggler {
+  background: white;
+}
+#chick, #beef, #sushi {
+  background: rgb(240, 255, 255);
+  border: 1px solid black;
+}
+@media (min-width:992px) {
+  .vis {
+    visibility: hidden !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .vis {
+    visibility: hidden !important;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .vis {
+    visibility: hidden !important;
+  }
+  #chick, #beef, #sushi {
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width:575px) {
+  body {
+    padding: 0 3%;
+  }
+  #chick, #beef, #sushi {
+    margin: 3%;
+  }
+  .rule {
+    color: black;
+    width: 100%;
+    margin: 0;
+  }
+}
